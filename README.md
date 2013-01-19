@@ -64,7 +64,6 @@ SPEC_BEGIN(YourSpec)
 
 SPEC_END
 
-@end
 ```
 After that, in your test project, you need to create a file with your factory name in .json or .plist format
 (Ex: if your factory name is 'People' and you have a file people.json and other people.plist it will unmarshall the .json file)
