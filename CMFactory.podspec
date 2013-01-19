@@ -1,0 +1,23 @@
+Pod::Spec.new do |s|
+  s.name         = "CMFactory"
+  s.version      = "1.0.0"
+  s.summary      = "FactoryGirl idea for iOS."
+  s.homepage     = "https://github.com/lucasmedeirosleite/CMFactory"
+
+  s.license      = { :type => 'MIT', :file => 'LICENSE' }
+  
+  s.author       = { "Lucas Medeiros" => "lucastoc@gmail.com" }
+  
+  s.source       = { :git => "https://github.com/lucasmedeirosleite/CMFactory.git", :tag => "1.0.0" }
+  
+  s.requires_arc = true
+
+  s.platform     = :ios, '5.0'
+  s.ios.deployment_target = '5.0'
+
+  s.source_files = 'CMFactoryExampleTests/CMFactory'
+
+  s.dependency 'Mantle', '~> 0.2.2'
+  s.dependency 'SBJson', '~> 3.1.1'
+
+end

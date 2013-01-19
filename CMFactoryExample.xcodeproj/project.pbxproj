@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		055C5D14F23E404B9A04853E /* libPods-CMFactoryExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 801D961A3DA9405684ACAD3E /* libPods-CMFactoryExampleTests.a */; };
+		C61D6D4816A8CF6E0048AB13 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C61D6D4716A8CF6E0048AB13 /* UIKit.framework */; };
+		C61D6D4A16A8CF6E0048AB13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C61D6D4916A8CF6E0048AB13 /* Foundation.framework */; };
+		C61D6D4C16A8CF6E0048AB13 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C61D6D4B16A8CF6E0048AB13 /* CoreGraphics.framework */; };
+		C61D6D5216A8CF6E0048AB13 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C61D6D5016A8CF6E0048AB13 /* InfoPlist.strings */; };
+		C61D6D5416A8CF6E0048AB13 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C61D6D5316A8CF6E0048AB13 /* main.m */; };
+		C61D6D5816A8CF6E0048AB13 /* CMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C61D6D5716A8CF6E0048AB13 /* CMAppDelegate.m */; };
+		C61D6D5A16A8CF6E0048AB13 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C61D6D5916A8CF6E0048AB13 /* Default.png */; };
+		C61D6D5C16A8CF6E0048AB13 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C61D6D5B16A8CF6E0048AB13 /* Default@2x.png */; };
+		C61D6D5E16A8CF6E0048AB13 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C61D6D5D16A8CF6E0048AB13 /* Default-568h@2x.png */; };
+		C61D6D6116A8CF6E0048AB13 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C61D6D5F16A8CF6E0048AB13 /* MainStoryboard.storyboard */; };
+		C61D6D6416A8CF6E0048AB13 /* CMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61D6D6316A8CF6E0048AB13 /* CMViewController.m */; };
+		C61D6D6C16A8CF6E0048AB13 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C61D6D6B16A8CF6E0048AB13 /* SenTestingKit.framework */; };
+		C61D6D6D16A8CF6E0048AB13 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C61D6D4716A8CF6E0048AB13 /* UIKit.framework */; };
+		C61D6D6E16A8CF6E0048AB13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C61D6D4916A8CF6E0048AB13 /* Foundation.framework */; };
+		C61D6D7616A8CF6E0048AB13 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C61D6D7416A8CF6E0048AB13 /* InfoPlist.strings */; };
+		C62A773216AADC7A005D8DD1 /* Messages.json in Resources */ = {isa = PBXBuildFile; fileRef = C62A773116AADC7A005D8DD1 /* Messages.json */; };
+		C62A773516AAE285005D8DD1 /* Images.plist in Resources */ = {isa = PBXBuildFile; fileRef = C62A773416AAE285005D8DD1 /* Images.plist */; };
+		C690A6D516AA34F800B0974F /* CMImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C690A6D416AA34F800B0974F /* CMImage.m */; };
+		C690A71816AA4AD500B0974F /* Image.plist in Resources */ = {isa = PBXBuildFile; fileRef = C690A71716AA4AD500B0974F /* Image.plist */; };
+		C6A8357A16A9F51D0085AAB0 /* CMFactorySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A8357916A9F51D0085AAB0 /* CMFactorySpec.m */; };
+		C6A8357E16A9F61B0085AAB0 /* CMMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A8357D16A9F61B0085AAB0 /* CMMessage.m */; };
+		C6A8358116A9F6700085AAB0 /* CMFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A8358016A9F6700085AAB0 /* CMFactory.m */; };
+		C6A8358316A9FBC20085AAB0 /* Message.json in Resources */ = {isa = PBXBuildFile; fileRef = C6A8358216A9FBC20085AAB0 /* Message.json */; };
+		EA553F0571E44643A3C8C23B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F32C23D666143F99E0584B1 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C61D6D6F16A8CF6E0048AB13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C61D6D3A16A8CF6E0048AB13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C61D6D4216A8CF6E0048AB13;
+			remoteInfo = CMFactoryExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F32C23D666143F99E0584B1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BE50A8993B84E7199C3F81A /* Pods-CMFactoryExampleTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMFactoryExampleTests.xcconfig"; path = "Pods/Pods-CMFactoryExampleTests.xcconfig"; sourceTree = SOURCE_ROOT; };
+		801D961A3DA9405684ACAD3E /* libPods-CMFactoryExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CMFactoryExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0A187FD7AD9488C96EED44D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		C61D6D4316A8CF6E0048AB13 /* CMFactoryExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CMFactoryExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C61D6D4716A8CF6E0048AB13 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C61D6D4916A8CF6E0048AB13 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C61D6D4B16A8CF6E0048AB13 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C61D6D4F16A8CF6E0048AB13 /* CMFactoryExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CMFactoryExample-Info.plist"; sourceTree = "<group>"; };
+		C61D6D5116A8CF6E0048AB13 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C61D6D5316A8CF6E0048AB13 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C61D6D5516A8CF6E0048AB13 /* CMFactoryExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CMFactoryExample-Prefix.pch"; sourceTree = "<group>"; };
+		C61D6D5616A8CF6E0048AB13 /* CMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMAppDelegate.h; sourceTree = "<group>"; };
+		C61D6D5716A8CF6E0048AB13 /* CMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMAppDelegate.m; sourceTree = "<group>"; };
+		C61D6D5916A8CF6E0048AB13 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		C61D6D5B16A8CF6E0048AB13 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		C61D6D5D16A8CF6E0048AB13 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C61D6D6016A8CF6E0048AB13 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		C61D6D6216A8CF6E0048AB13 /* CMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMViewController.h; sourceTree = "<group>"; };
+		C61D6D6316A8CF6E0048AB13 /* CMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMViewController.m; sourceTree = "<group>"; };
+		C61D6D6A16A8CF6E0048AB13 /* CMFactoryExampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CMFactoryExampleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C61D6D6B16A8CF6E0048AB13 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		C61D6D7316A8CF6E0048AB13 /* CMFactoryExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CMFactoryExampleTests-Info.plist"; sourceTree = "<group>"; };
+		C61D6D7516A8CF6E0048AB13 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C62A773116AADC7A005D8DD1 /* Messages.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Messages.json; path = Fixtures/Messages.json; sourceTree = "<group>"; };
+		C62A773416AAE285005D8DD1 /* Images.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Images.plist; path = Fixtures/Images.plist; sourceTree = "<group>"; };
+		C690A6D316AA34F800B0974F /* CMImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMImage.h; sourceTree = "<group>"; };
+		C690A6D416AA34F800B0974F /* CMImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMImage.m; sourceTree = "<group>"; };
+		C690A71716AA4AD500B0974F /* Image.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Image.plist; path = Fixtures/Image.plist; sourceTree = "<group>"; };
+		C6A8357916A9F51D0085AAB0 /* CMFactorySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMFactorySpec.m; sourceTree = "<group>"; };
+		C6A8357C16A9F61A0085AAB0 /* CMMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMMessage.h; sourceTree = "<group>"; };
+		C6A8357D16A9F61B0085AAB0 /* CMMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMMessage.m; sourceTree = "<group>"; };
+		C6A8357F16A9F6700085AAB0 /* CMFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CMFactory.h; path = CMFactory/CMFactory.h; sourceTree = "<group>"; };
+		C6A8358016A9F6700085AAB0 /* CMFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CMFactory.m; path = CMFactory/CMFactory.m; sourceTree = "<group>"; };
+		C6A8358216A9FBC20085AAB0 /* Message.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Message.json; path = Fixtures/Message.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C61D6D4016A8CF6E0048AB13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C61D6D4816A8CF6E0048AB13 /* UIKit.framework in Frameworks */,
+				C61D6D4A16A8CF6E0048AB13 /* Foundation.framework in Frameworks */,
+				C61D6D4C16A8CF6E0048AB13 /* CoreGraphics.framework in Frameworks */,
+				EA553F0571E44643A3C8C23B /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C61D6D6616A8CF6E0048AB13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C61D6D6C16A8CF6E0048AB13 /* SenTestingKit.framework in Frameworks */,
+				C61D6D6D16A8CF6E0048AB13 /* UIKit.framework in Frameworks */,
+				C61D6D6E16A8CF6E0048AB13 /* Foundation.framework in Frameworks */,
+				055C5D14F23E404B9A04853E /* libPods-CMFactoryExampleTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C61D6D3816A8CF6E0048AB13 = {
+			isa = PBXGroup;
+			children = (
+				C61D6D4D16A8CF6E0048AB13 /* CMFactoryExample */,
+				C61D6D7116A8CF6E0048AB13 /* CMFactoryExampleTests */,
+				C61D6D4616A8CF6E0048AB13 /* Frameworks */,
+				C61D6D4416A8CF6E0048AB13 /* Products */,
+				5BE50A8993B84E7199C3F81A /* Pods-CMFactoryExampleTests.xcconfig */,
+				B0A187FD7AD9488C96EED44D /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		C61D6D4416A8CF6E0048AB13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C61D6D4316A8CF6E0048AB13 /* CMFactoryExample.app */,
+				C61D6D6A16A8CF6E0048AB13 /* CMFactoryExampleTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C61D6D4616A8CF6E0048AB13 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C61D6D4716A8CF6E0048AB13 /* UIKit.framework */,
+				C61D6D4916A8CF6E0048AB13 /* Foundation.framework */,
+				C61D6D4B16A8CF6E0048AB13 /* CoreGraphics.framework */,
+				C61D6D6B16A8CF6E0048AB13 /* SenTestingKit.framework */,
+				801D961A3DA9405684ACAD3E /* libPods-CMFactoryExampleTests.a */,
+				1F32C23D666143F99E0584B1 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C61D6D4D16A8CF6E0048AB13 /* CMFactoryExample */ = {
+			isa = PBXGroup;
+			children = (
+				C61D6D5616A8CF6E0048AB13 /* CMAppDelegate.h */,
+				C61D6D5716A8CF6E0048AB13 /* CMAppDelegate.m */,
+				C61D6D5F16A8CF6E0048AB13 /* MainStoryboard.storyboard */,
+				C61D6D6216A8CF6E0048AB13 /* CMViewController.h */,
+				C61D6D6316A8CF6E0048AB13 /* CMViewController.m */,
+				C61D6D4E16A8CF6E0048AB13 /* Supporting Files */,
+			);
+			path = CMFactoryExample;
+			sourceTree = "<group>";
+		};
+		C61D6D4E16A8CF6E0048AB13 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C61D6D4F16A8CF6E0048AB13 /* CMFactoryExample-Info.plist */,
+				C61D6D5016A8CF6E0048AB13 /* InfoPlist.strings */,
+				C61D6D5316A8CF6E0048AB13 /* main.m */,
+				C61D6D5516A8CF6E0048AB13 /* CMFactoryExample-Prefix.pch */,
+				C61D6D5916A8CF6E0048AB13 /* Default.png */,
+				C61D6D5B16A8CF6E0048AB13 /* Default@2x.png */,
+				C61D6D5D16A8CF6E0048AB13 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C61D6D7116A8CF6E0048AB13 /* CMFactoryExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				C61D6DA616A8DA650048AB13 /* Fixtures */,
+				C61D6D9C16A8D8590048AB13 /* CMFactory */,
+				C61D6D7216A8CF6E0048AB13 /* Supporting Files */,
+				C6A8357916A9F51D0085AAB0 /* CMFactorySpec.m */,
+				C6A8357C16A9F61A0085AAB0 /* CMMessage.h */,
+				C6A8357D16A9F61B0085AAB0 /* CMMessage.m */,
+				C690A6D316AA34F800B0974F /* CMImage.h */,
+				C690A6D416AA34F800B0974F /* CMImage.m */,
+			);
+			path = CMFactoryExampleTests;
+			sourceTree = "<group>";
+		};
+		C61D6D7216A8CF6E0048AB13 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C61D6D7316A8CF6E0048AB13 /* CMFactoryExampleTests-Info.plist */,
+				C61D6D7416A8CF6E0048AB13 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C61D6D9C16A8D8590048AB13 /* CMFactory */ = {
+			isa = PBXGroup;
+			children = (
+				C6A8357F16A9F6700085AAB0 /* CMFactory.h */,
+				C6A8358016A9F6700085AAB0 /* CMFactory.m */,
+			);
+			name = CMFactory;
+			sourceTree = "<group>";
+		};
+		C61D6DA616A8DA650048AB13 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				C6A8358216A9FBC20085AAB0 /* Message.json */,
+				C62A773116AADC7A005D8DD1 /* Messages.json */,
+				C690A71716AA4AD500B0974F /* Image.plist */,
+				C62A773416AAE285005D8DD1 /* Images.plist */,
+			);
+			name = Fixtures;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C61D6D4216A8CF6E0048AB13 /* CMFactoryExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C61D6D7C16A8CF6E0048AB13 /* Build configuration list for PBXNativeTarget "CMFactoryExample" */;
+			buildPhases = (
+				C61D6D3F16A8CF6E0048AB13 /* Sources */,
+				C61D6D4016A8CF6E0048AB13 /* Frameworks */,
+				C61D6D4116A8CF6E0048AB13 /* Resources */,
+				C8265DE31AAB4D20B982F798 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CMFactoryExample;
+			productName = CMFactoryExample;
+			productReference = C61D6D4316A8CF6E0048AB13 /* CMFactoryExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C61D6D6916A8CF6E0048AB13 /* CMFactoryExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C61D6D7F16A8CF6E0048AB13 /* Build configuration list for PBXNativeTarget "CMFactoryExampleTests" */;
+			buildPhases = (
+				C61D6D6516A8CF6E0048AB13 /* Sources */,
+				C61D6D6616A8CF6E0048AB13 /* Frameworks */,
+				C61D6D6716A8CF6E0048AB13 /* Resources */,
+				C61D6D6816A8CF6E0048AB13 /* ShellScript */,
+				1A2526C99DB64D3782E82B09 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C61D6D7016A8CF6E0048AB13 /* PBXTargetDependency */,
+			);
+			name = CMFactoryExampleTests;
+			productName = CMFactoryExampleTests;
+			productReference = C61D6D6A16A8CF6E0048AB13 /* CMFactoryExampleTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C61D6D3A16A8CF6E0048AB13 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CM;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Codeminer42;
+			};
+			buildConfigurationList = C61D6D3D16A8CF6E0048AB13 /* Build configuration list for PBXProject "CMFactoryExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C61D6D3816A8CF6E0048AB13;
+			productRefGroup = C61D6D4416A8CF6E0048AB13 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C61D6D4216A8CF6E0048AB13 /* CMFactoryExample */,
+				C61D6D6916A8CF6E0048AB13 /* CMFactoryExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C61D6D4116A8CF6E0048AB13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C61D6D5216A8CF6E0048AB13 /* InfoPlist.strings in Resources */,
+				C61D6D5A16A8CF6E0048AB13 /* Default.png in Resources */,
+				C61D6D5C16A8CF6E0048AB13 /* Default@2x.png in Resources */,
+				C61D6D5E16A8CF6E0048AB13 /* Default-568h@2x.png in Resources */,
+				C61D6D6116A8CF6E0048AB13 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C61D6D6716A8CF6E0048AB13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C61D6D7616A8CF6E0048AB13 /* InfoPlist.strings in Resources */,
+				C6A8358316A9FBC20085AAB0 /* Message.json in Resources */,
+				C690A71816AA4AD500B0974F /* Image.plist in Resources */,
+				C62A773216AADC7A005D8DD1 /* Messages.json in Resources */,
+				C62A773516AAE285005D8DD1 /* Images.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A2526C99DB64D3782E82B09 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-CMFactoryExampleTests-resources.sh\"\n";
+		};
+		C61D6D6816A8CF6E0048AB13 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		C8265DE31AAB4D20B982F798 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C61D6D3F16A8CF6E0048AB13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C61D6D5416A8CF6E0048AB13 /* main.m in Sources */,
+				C61D6D5816A8CF6E0048AB13 /* CMAppDelegate.m in Sources */,
+				C61D6D6416A8CF6E0048AB13 /* CMViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C61D6D6516A8CF6E0048AB13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6A8357A16A9F51D0085AAB0 /* CMFactorySpec.m in Sources */,
+				C6A8357E16A9F61B0085AAB0 /* CMMessage.m in Sources */,
+				C6A8358116A9F6700085AAB0 /* CMFactory.m in Sources */,
+				C690A6D516AA34F800B0974F /* CMImage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C61D6D7016A8CF6E0048AB13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C61D6D4216A8CF6E0048AB13 /* CMFactoryExample */;
+			targetProxy = C61D6D6F16A8CF6E0048AB13 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C61D6D5016A8CF6E0048AB13 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C61D6D5116A8CF6E0048AB13 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C61D6D5F16A8CF6E0048AB13 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C61D6D6016A8CF6E0048AB13 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		C61D6D7416A8CF6E0048AB13 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C61D6D7516A8CF6E0048AB13 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C61D6D7A16A8CF6E0048AB13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C61D6D7B16A8CF6E0048AB13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C61D6D7D16A8CF6E0048AB13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0A187FD7AD9488C96EED44D /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CMFactoryExample/CMFactoryExample-Prefix.pch";
+				INFOPLIST_FILE = "CMFactoryExample/CMFactoryExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C61D6D7E16A8CF6E0048AB13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0A187FD7AD9488C96EED44D /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CMFactoryExample/CMFactoryExample-Prefix.pch";
+				INFOPLIST_FILE = "CMFactoryExample/CMFactoryExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C61D6D8016A8CF6E0048AB13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BE50A8993B84E7199C3F81A /* Pods-CMFactoryExampleTests.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = "${inherited}";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CMFactoryExample.app/CMFactoryExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CMFactoryExample/CMFactoryExample-Prefix.pch";
+				INFOPLIST_FILE = "CMFactoryExampleTests/CMFactoryExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C61D6D8116A8CF6E0048AB13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BE50A8993B84E7199C3F81A /* Pods-CMFactoryExampleTests.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = "${inherited}";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CMFactoryExample.app/CMFactoryExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CMFactoryExample/CMFactoryExample-Prefix.pch";
+				INFOPLIST_FILE = "CMFactoryExampleTests/CMFactoryExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C61D6D3D16A8CF6E0048AB13 /* Build configuration list for PBXProject "CMFactoryExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C61D6D7A16A8CF6E0048AB13 /* Debug */,
+				C61D6D7B16A8CF6E0048AB13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C61D6D7C16A8CF6E0048AB13 /* Build configuration list for PBXNativeTarget "CMFactoryExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C61D6D7D16A8CF6E0048AB13 /* Debug */,
+				C61D6D7E16A8CF6E0048AB13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C61D6D7F16A8CF6E0048AB13 /* Build configuration list for PBXNativeTarget "CMFactoryExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C61D6D8016A8CF6E0048AB13 /* Debug */,
+				C61D6D8116A8CF6E0048AB13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C61D6D3A16A8CF6E0048AB13 /* Project object */;
+}

@@ -1,0 +1,23 @@
+
+PODS:
+- Kiwi (2.0.2)
+- Mantle (0.2.2):
+  - libextobjc/EXTKeyPathCoding
+  - libextobjc/EXTScope
+- SBJson (3.1.1)
+- libextobjc/EXTKeyPathCoding (0.2.4)
+- libextobjc/EXTScope (0.2.4)
+
+DEPENDENCIES:
+- Kiwi (= 2.0.2)
+- Mantle (= 0.2.2)
+- SBJson (= 3.1.1)
+
+SPEC CHECKSUMS:
+  Mantle: 190df0e0b65c0ebc13f2ed39e99248e630ad2616
+  libextobjc/EXTKeyPathCoding: a2c1ab844d87408fae8e6b8da84b913b7573b051
+  libextobjc/EXTScope: a2c1ab844d87408fae8e6b8da84b913b7573b051
+  Kiwi: 3bd259d3b9c98f829f47c6bec11e4c9b56449555
+  SBJson: d917ef596960a977b6c20235a90810bc306a48f0
+
+COCOAPODS: 0.16.1
