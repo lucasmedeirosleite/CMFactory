@@ -16,8 +16,10 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '5.0'
 
   s.source_files = 'CMFactoryExampleTests/CMFactory'
+  
   s.xcconfig  = { 'FRAMEWORK_SEARCH_PATHS' => '"$(inherited)" "$(SDKROOT)/Developer/Library/Frameworks" "$(DEVELOPER_LIBRARY_DIR)/Frameworks"' }
 
   s.dependency 'SBJson', '~> 3.1.1'
+  s.dependency 'Mantle', '~> 0.2.2'
   
 end
