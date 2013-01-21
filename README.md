@@ -1,6 +1,6 @@
 # CMFactory
 
-This project brings the idea of [FactoryGirl](https://github.com/thoughtbot/factory_girl) to iOS Projects
+This project loads fixtures and unmarshall them into a [Mantle](https://github.com/github/Mantle) class or NSDictionary class. 
 
 ##Contact:
 

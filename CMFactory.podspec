@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "CMFactory"
   s.version      = "1.0.0"
-  s.summary      = "FactoryGirl idea for iOS."
+  s.summary      = "Fixture loader for iOS."
   s.homepage     = "https://github.com/lucasmedeirosleite/CMFactory"
 
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
