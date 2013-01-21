@@ -25,11 +25,13 @@
 		C61D6D7616A8CF6E0048AB13 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C61D6D7416A8CF6E0048AB13 /* InfoPlist.strings */; };
 		C62A773216AADC7A005D8DD1 /* Messages.json in Resources */ = {isa = PBXBuildFile; fileRef = C62A773116AADC7A005D8DD1 /* Messages.json */; };
 		C62A773516AAE285005D8DD1 /* Images.plist in Resources */ = {isa = PBXBuildFile; fileRef = C62A773416AAE285005D8DD1 /* Images.plist */; };
+		C67EBC0B16AD88D20002A89C /* CMFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = C67EBC0A16AD88D20002A89C /* CMFixture.m */; };
+		C67EBC0E16AD89850002A89C /* CMFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = C67EBC0D16AD89850002A89C /* CMFactory.m */; };
+		C67EBC1016AD8DC20002A89C /* CMFactorySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = C67EBC0F16AD8DC20002A89C /* CMFactorySpec.m */; };
 		C690A6D516AA34F800B0974F /* CMImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C690A6D416AA34F800B0974F /* CMImage.m */; };
 		C690A71816AA4AD500B0974F /* Image.plist in Resources */ = {isa = PBXBuildFile; fileRef = C690A71716AA4AD500B0974F /* Image.plist */; };
-		C6A8357A16A9F51D0085AAB0 /* CMFactorySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A8357916A9F51D0085AAB0 /* CMFactorySpec.m */; };
+		C6A8357A16A9F51D0085AAB0 /* CMFixtureSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A8357916A9F51D0085AAB0 /* CMFixtureSpec.m */; };
 		C6A8357E16A9F61B0085AAB0 /* CMMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A8357D16A9F61B0085AAB0 /* CMMessage.m */; };
-		C6A8358116A9F6700085AAB0 /* CMFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A8358016A9F6700085AAB0 /* CMFactory.m */; };
 		C6A8358316A9FBC20085AAB0 /* Message.json in Resources */ = {isa = PBXBuildFile; fileRef = C6A8358216A9FBC20085AAB0 /* Message.json */; };
 		EA553F0571E44643A3C8C23B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F32C23D666143F99E0584B1 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -71,14 +73,17 @@
 		C61D6D7516A8CF6E0048AB13 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C62A773116AADC7A005D8DD1 /* Messages.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Messages.json; path = Fixtures/Messages.json; sourceTree = "<group>"; };
 		C62A773416AAE285005D8DD1 /* Images.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Images.plist; path = Fixtures/Images.plist; sourceTree = "<group>"; };
+		C67EBC0A16AD88D20002A89C /* CMFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CMFixture.m; path = CMFactory/CMFixture.m; sourceTree = "<group>"; };
+		C67EBC0C16AD89850002A89C /* CMFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CMFactory.h; path = CMFactory/CMFactory.h; sourceTree = "<group>"; };
+		C67EBC0D16AD89850002A89C /* CMFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CMFactory.m; path = CMFactory/CMFactory.m; sourceTree = "<group>"; };
+		C67EBC0F16AD8DC20002A89C /* CMFactorySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMFactorySpec.m; sourceTree = "<group>"; };
 		C690A6D316AA34F800B0974F /* CMImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMImage.h; sourceTree = "<group>"; };
 		C690A6D416AA34F800B0974F /* CMImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMImage.m; sourceTree = "<group>"; };
 		C690A71716AA4AD500B0974F /* Image.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Image.plist; path = Fixtures/Image.plist; sourceTree = "<group>"; };
-		C6A8357916A9F51D0085AAB0 /* CMFactorySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMFactorySpec.m; sourceTree = "<group>"; };
+		C6A8357916A9F51D0085AAB0 /* CMFixtureSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMFixtureSpec.m; sourceTree = "<group>"; };
 		C6A8357C16A9F61A0085AAB0 /* CMMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMMessage.h; sourceTree = "<group>"; };
 		C6A8357D16A9F61B0085AAB0 /* CMMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMMessage.m; sourceTree = "<group>"; };
-		C6A8357F16A9F6700085AAB0 /* CMFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CMFactory.h; path = CMFactory/CMFactory.h; sourceTree = "<group>"; };
-		C6A8358016A9F6700085AAB0 /* CMFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CMFactory.m; path = CMFactory/CMFactory.m; sourceTree = "<group>"; };
+		C6A8357F16A9F6700085AAB0 /* CMFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CMFixture.h; path = CMFactory/CMFixture.h; sourceTree = "<group>"; };
 		C6A8358216A9FBC20085AAB0 /* Message.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Message.json; path = Fixtures/Message.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -175,7 +180,8 @@
 				C61D6DA616A8DA650048AB13 /* Fixtures */,
 				C61D6D9C16A8D8590048AB13 /* CMFactory */,
 				C61D6D7216A8CF6E0048AB13 /* Supporting Files */,
-				C6A8357916A9F51D0085AAB0 /* CMFactorySpec.m */,
+				C6A8357916A9F51D0085AAB0 /* CMFixtureSpec.m */,
+				C67EBC0F16AD8DC20002A89C /* CMFactorySpec.m */,
 				C6A8357C16A9F61A0085AAB0 /* CMMessage.h */,
 				C6A8357D16A9F61B0085AAB0 /* CMMessage.m */,
 				C690A6D316AA34F800B0974F /* CMImage.h */,
@@ -196,8 +202,10 @@
 		C61D6D9C16A8D8590048AB13 /* CMFactory */ = {
 			isa = PBXGroup;
 			children = (
-				C6A8357F16A9F6700085AAB0 /* CMFactory.h */,
-				C6A8358016A9F6700085AAB0 /* CMFactory.m */,
+				C6A8357F16A9F6700085AAB0 /* CMFixture.h */,
+				C67EBC0A16AD88D20002A89C /* CMFixture.m */,
+				C67EBC0C16AD89850002A89C /* CMFactory.h */,
+				C67EBC0D16AD89850002A89C /* CMFactory.m */,
 			);
 			name = CMFactory;
 			sourceTree = "<group>";
@@ -368,10 +376,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6A8357A16A9F51D0085AAB0 /* CMFactorySpec.m in Sources */,
+				C6A8357A16A9F51D0085AAB0 /* CMFixtureSpec.m in Sources */,
 				C6A8357E16A9F61B0085AAB0 /* CMMessage.m in Sources */,
-				C6A8358116A9F6700085AAB0 /* CMFactory.m in Sources */,
 				C690A6D516AA34F800B0974F /* CMImage.m in Sources */,
+				C67EBC0B16AD88D20002A89C /* CMFixture.m in Sources */,
+				C67EBC0E16AD89850002A89C /* CMFactory.m in Sources */,
+				C67EBC1016AD8DC20002A89C /* CMFactorySpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

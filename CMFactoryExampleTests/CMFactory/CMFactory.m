@@ -2,144 +2,60 @@
 //  CMFactory.m
 //  CMFactoryExample
 //
-//  Created by Lucas Medeiros on 18/01/13.
+//  Created by Lucas Medeiros on 21/01/13.
 //  Copyright (c) 2013 Codeminer42. All rights reserved.
 //
 
 #import "CMFactory.h"
-#import "MTLModel.h"
-#import "SBJSON.h"
+#import <objc/runtime.h>
+
+@interface CMFactory(){
+    Class _factoryClass;
+}
+
+@end
 
 @implementation CMFactory
 
-+ (id)buildUsingMantleClass:(Class)objectClass fromFactory:(NSString *)fileName
++ (CMFactory *)forClass:(Class)objectClass
 {
-    [self checkIfClassIsSubclassOfMTlModel:objectClass];
-    [self checkIfAnyFileWithNameExists:fileName];
-    return [self instanceOfClass:objectClass fromFileName:fileName];
+    CMFactory *factory = [[CMFactory alloc] initWithFactoryClass:objectClass];
+    return factory;
 }
 
-+ (id)buildUsingFactory:(NSString *)fileName
+- (id)initWithFactoryClass:(Class)objectClass
 {
-    [self checkIfAnyFileWithNameExists:fileName];
-    return [self contentObjectFromFileNamed:fileName];
-}
-
-+ (void)checkIfAnyFileWithNameExists:(NSString *)fileName
-{
-    if (![self isJSONFilePresent:fileName] && ![self isPlistFilePresent:fileName]) {
-        @throw ([NSException exceptionWithName:@"NoFileFound"
-                                        reason:@"Neither .plist nor .json files were found with factory name"
-                                      userInfo:nil]);
+    self = [super init];
+    if (self) {
+        _factoryClass = objectClass;
+        _fields = [NSMutableDictionary dictionary];
     }
+    return self;
 }
 
-+ (void)checkIfClassIsSubclassOfMTlModel:(Class) objectClass
+- (void)addToField:(NSString *)field value:(CMValueBlock)valueBlock
 {
-    if (![objectClass isSubclassOfClass:[MTLModel class]]) {
-        @throw ([NSException exceptionWithName:@"NoMantleClassException"
-                                        reason:@"This class is not a subclass of MTLModel"
-                                      userInfo:nil]);
+    if (![self containsFieldNamed:field]) {
+        @throw ([NSException exceptionWithName:@"CMFieldNotFoundException" reason:@"The field passed was not found" userInfo:nil]);
     }
-
+    [_fields setObject:valueBlock(self) forKey:field];
 }
 
-+ (id)instanceOfClass:(Class) objectClass fromFileName:(NSString *)fileName
+- (id)build
 {
-    if ([self isJSONFilePresent:fileName]) {
-        return [self instanceOfClass:objectClass fromJSONNamed:fileName];
-    } else {
-        return [self instanceOfClass:objectClass fromPlistNamed:fileName];
+    id instance = [[_factoryClass alloc] init];
+    
+    for (NSString *key in [self.fields allKeys]) {
+        [instance setValue:[self.fields objectForKey:key] forKey:key];
     }
+    
+    return instance;
 }
 
-+ (id)instanceOfClass:(Class) objectClass fromPlistNamed:(NSString *)fileName
+- (BOOL)containsFieldNamed:(NSString *)fieldName
 {
-    id content = [self contentObjectFromPlistFileNamed:fileName];
-    if ([content isKindOfClass:[NSDictionary class]]) {
-        return [[objectClass alloc] initWithExternalRepresentation:content];
-    }
-    return [self initArrayFromPlistContent:content withClass:objectClass];
-}
-
-+ (id)instanceOfClass:(Class) objectClass fromJSONNamed:(NSString *)fileName
-{
-    id jsonValue = [self contentObjectFromFileNamed:fileName];
-    if ([jsonValue isKindOfClass:[NSArray class]]) {
-        return [self initArrayFromContent:jsonValue withClass:objectClass];
-    }
-    return [[objectClass alloc] initWithExternalRepresentation:jsonValue];
-}
-
-+ (id)contentObjectFromFileNamed:(NSString *)fileName
-{
-    if ([self isJSONFilePresent:fileName]) {
-        return [self contentObjectFromJSONFileNamed:fileName];
-    } else {
-        return [self contentObjectFromPlistFileNamed:fileName];
-    }
-}
-
-+ (id)contentObjectFromJSONFileNamed:(NSString *)fileName
-{
-    id result = [self contentFromFileNamed:fileName ofType:@"json"];
-    return [result JSONValue];
-}
-
-+ (id)contentObjectFromPlistFileNamed:(NSString *)fileName
-{
-    NSString *path = [self pathOfFileNamed:fileName withExtension:@"plist"];
-    NSDictionary *content = [NSDictionary dictionaryWithContentsOfFile:path];
-    if (content) {
-        return content;
-    }
-    return [NSArray arrayWithContentsOfFile:path];
-}
-
-+ (NSArray *)initArrayFromContent:(NSArray *)jsonArray withClass:(Class) objectClass
-{
-    NSMutableArray *array = [NSMutableArray array];
-    for (id json in jsonArray) {
-        id convertedObject = [[objectClass alloc] initWithExternalRepresentation:json];
-        [array addObject:convertedObject];
-    }
-    return array;
-}
-
-+ (NSArray *)initArrayFromPlistContent:(NSArray *)plistContentArray withClass:(Class) objectClass
-{
-    NSMutableArray *array = [NSMutableArray array];
-    for (NSDictionary *dictionary in plistContentArray) {
-        id convertedObject = [[objectClass alloc] initWithExternalRepresentation:dictionary];
-        [array addObject:convertedObject];
-    }
-    return array;
-}
-
-+ (BOOL)isJSONFilePresent:(NSString *)fileName
-{
-    return [[self pathOfFileNamed:fileName withExtension:@"json"] length] > 0;
-}
-
-+ (BOOL)isPlistFilePresent:(NSString *)fileName
-{
-    return [[self pathOfFileNamed:fileName withExtension:@"plist"] length] > 0;
-}
-
-+ (NSString *)contentFromFileNamed:(NSString *)fileName ofType:(NSString *)fileType
-{
-    return [[NSString alloc] initWithData:[self dataFromFileNamed:fileName ofType:fileType] encoding:NSUTF8StringEncoding];
-}
-
-+ (NSData *)dataFromFileNamed:(NSString *)fileName ofType:(NSString *)fileType
-{
-    return [NSData dataWithContentsOfFile:[self pathOfFileNamed:fileName withExtension:fileType]];
-}
-
-+ (NSString *)pathOfFileNamed:(NSString *)fileName withExtension:(NSString *)extension
-{
-    NSString *filePath = [[NSBundle bundleForClass:[self class]] pathForResource:fileName ofType:extension];
-    return filePath;
+    objc_property_t property = class_getProperty(_factoryClass, [fieldName UTF8String]);
+    return property != NULL;
 }
 
 @end

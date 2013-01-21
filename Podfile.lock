@@ -4,6 +4,7 @@ PODS:
 - Mantle (0.2.2):
   - libextobjc/EXTKeyPathCoding
   - libextobjc/EXTScope
+- NSArray+Functional (1.0.0)
 - SBJson (3.1.1)
 - libextobjc/EXTKeyPathCoding (0.2.4)
 - libextobjc/EXTScope (0.2.4)
@@ -11,10 +12,12 @@ PODS:
 DEPENDENCIES:
 - Kiwi (= 2.0.2)
 - Mantle (= 0.2.2)
+- NSArray+Functional (= 1.0.0)
 - SBJson (= 3.1.1)
 
 SPEC CHECKSUMS:
   Mantle: 190df0e0b65c0ebc13f2ed39e99248e630ad2616
+  NSArray+Functional: 2fb24f1533c1380a595ed1da347bd4ec705f5495
   libextobjc/EXTKeyPathCoding: a2c1ab844d87408fae8e6b8da84b913b7573b051
   libextobjc/EXTScope: a2c1ab844d87408fae8e6b8da84b913b7573b051
   Kiwi: 3bd259d3b9c98f829f47c6bec11e4c9b56449555
