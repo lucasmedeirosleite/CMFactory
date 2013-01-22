@@ -38,7 +38,40 @@
     if (![self containsFieldNamed:field]) {
         @throw ([NSException exceptionWithName:@"CMFieldNotFoundException" reason:@"The field passed was not found" userInfo:nil]);
     }
-    [_fields setObject:valueBlock(self) forKey:field];
+    [_fields setObject:valueBlock() forKey:field];
+}
+
+- (void)addToField:(NSString *)field sequenceValue:(CMSequenceValueBlock)sequenceBlock
+{
+    if (![self containsFieldNamed:field]) {
+        @throw ([NSException exceptionWithName:@"CMFieldNotFoundException" reason:@"The field passed was not found" userInfo:nil]);
+    }
+    [_fields setObject:sequenceBlock forKey:field];
+}
+
+- (NSArray *)buildWithCapacity:(NSUInteger)capacity
+{
+    NSMutableArray *array = [NSMutableArray arrayWithCapacity:capacity];
+    for (NSUInteger i = 0 ; i < capacity; i++) {
+        
+        id instance = [[_factoryClass alloc] init];
+        
+        for (NSString *key in [self.fields allKeys]) {
+            
+            id fieldValue = [self.fields objectForKey:key];
+            
+            if ([fieldValue isKindOfClass:NSClassFromString(@"NSBlock")]) {
+                CMSequenceValueBlock block = (CMSequenceValueBlock) fieldValue;
+                [instance setValue:block(i) forKey:key];
+            } else {
+                [instance setValue:fieldValue forKey:key];
+            }
+            
+        }
+        
+        [array addObject:instance];
+    }
+    return array;
 }
 
 - (id)build
@@ -48,7 +81,6 @@
     for (NSString *key in [self.fields allKeys]) {
         [instance setValue:[self.fields objectForKey:key] forKey:key];
     }
-    
     return instance;
 }
 

@@ -10,7 +10,8 @@
 
 @class CMFactory;
 
-typedef id(^CMValueBlock)(CMFactory *);
+typedef id(^CMValueBlock)(void);
+typedef id(^CMSequenceValueBlock)(NSUInteger sequence);
 
 @interface CMFactory : NSObject
 
@@ -19,6 +20,8 @@ typedef id(^CMValueBlock)(CMFactory *);
 + (CMFactory *)forClass:(Class) objectClass;
 
 - (void)addToField:(NSString *)field value:(CMValueBlock)valueBlock;
+- (void)addToField:(NSString *)field sequenceValue:(CMSequenceValueBlock)valueBlock;
 - (id)build;
+- (NSArray *)buildWithCapacity:(NSUInteger)capacity;
 
 @end

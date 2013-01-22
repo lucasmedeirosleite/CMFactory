@@ -39,7 +39,7 @@ describe(@"CMFactory", ^{
                 
                 [[theBlock(^{
                     
-                    [factory addToField:@"age" value:^(CMFactory *factory) {
+                    [factory addToField:@"age" value:^{
                         return @"www.github.com";
                     }];
                     
@@ -55,7 +55,7 @@ describe(@"CMFactory", ^{
                 
                 [[theBlock(^{
                     
-                    [factory addToField:@"age" value:^(CMFactory *factory) {
+                    [factory addToField:@"age" value:^{
                         return [NSURL URLWithString:@"www.github.com" ];
                     }];
                     
@@ -67,7 +67,7 @@ describe(@"CMFactory", ^{
         
         specify(^{
             
-            [factory addToField:@"url" value:^(CMFactory *factory) {
+            [factory addToField:@"url" value:^{
                 return @"www.github.com";
             }];
             
@@ -104,10 +104,10 @@ describe(@"CMFactory", ^{
 
             beforeEach(^{
                 factory = [CMFactory forClass:[CMMessage class]];
-                [factory addToField:@"content" value:^(CMFactory *factory) {
+                [factory addToField:@"content" value:^{
                     return @"Test";
                 }];
-                [factory addToField:@"image" value:^(CMFactory *factory) {
+                [factory addToField:@"image" value:^{
                     return [CMImage mockImage];
                 }];
                 message = [factory build];
@@ -123,6 +123,58 @@ describe(@"CMFactory", ^{
             
             specify(^{
                 [[message.image.url should] equal:[[CMImage mockImage] url]];
+            });
+            
+        });
+        
+    });
+    
+    describe(@"#buildArrayWithCapacity:", ^{
+        
+        __block CMFactory *factory;
+        __block NSArray *images;
+        
+        beforeEach(^{
+            factory = [CMFactory forClass:[CMImage class]];
+            [factory addToField:@"url" value:^{
+                return @"www.github.com";
+            }];
+            images = [factory buildWithCapacity:3];
+        });
+        
+        specify(^{
+            [[images should] beNonNil];
+        });
+        
+        specify(^{
+            [[images should] haveCountOf:3];
+        });
+        
+        context(@"when using sequence method", ^{
+           
+            beforeEach(^{
+                factory = [CMFactory forClass:[CMImage class]];
+                [factory addToField:@"url" sequenceValue:^(NSUInteger sequence) {
+                    return [NSString stringWithFormat:@"www.github.com%d", sequence];
+                }];
+                images = [factory buildWithCapacity:3];
+            });
+        
+            specify(^{
+                [[images should] beNonNil];
+            });
+            
+            specify(^{
+                [[images should] haveCountOf:3];
+            });
+            
+            specify(^{
+               
+                for(NSUInteger i = 0; i < 3; i++) {
+                    CMImage *image = [images objectAtIndex:i];
+                    [[image.url should] equal:[NSString stringWithFormat:@"www.github.com%d", i]];
+                }
+                
             });
             
         });
