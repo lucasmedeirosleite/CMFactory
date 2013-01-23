@@ -82,7 +82,7 @@
 
 + (id)contentObjectFromJSONFileNamed:(NSString *)fileName
 {
-    id result = [self contentFromFileNamed:fileName ofType:@"json"];
+    id result = [self contentFromFixtureNamed:fileName ofType:@"json"];
     return [result JSONValue];
 }
 
@@ -126,12 +126,12 @@
     return [[self pathOfFileNamed:fileName withExtension:@"plist"] length] > 0;
 }
 
-+ (NSString *)contentFromFileNamed:(NSString *)fileName ofType:(NSString *)fileType
++ (NSString *)contentFromFixtureNamed:(NSString *)fileName ofType:(NSString *)fileType
 {
-    return [[NSString alloc] initWithData:[self dataFromFileNamed:fileName ofType:fileType] encoding:NSUTF8StringEncoding];
+    return [[NSString alloc] initWithData:[self dataFromFixtureNamed:fileName ofType:fileType] encoding:NSUTF8StringEncoding];
 }
 
-+ (NSData *)dataFromFileNamed:(NSString *)fileName ofType:(NSString *)fileType
++ (NSData *)dataFromFixtureNamed:(NSString *)fileName ofType:(NSString *)fileType
 {
     return [NSData dataWithContentsOfFile:[self pathOfFileNamed:fileName withExtension:fileType]];
 }

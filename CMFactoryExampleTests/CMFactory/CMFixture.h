@@ -12,5 +12,7 @@
 
 + (id) buildUsingMantleClass:(Class) objectClass fromFixture:(NSString *)fileName;
 + (id) buildUsingFixture:(NSString *)fileName;
++ (NSData *)dataFromFixtureNamed:(NSString *)fixtureName ofType:(NSString *)fixtureType;
++ (NSString *)contentFromFixtureNamed:(NSString *)fixtureName ofType:(NSString *)fixtureType;
 
 @end
