@@ -36,7 +36,7 @@
 
 + (void)checkIfClassIsSubclassOfMTlModel:(Class) objectClass
 {
-    if (![objectClass isSubclassOfClass:[MTLModel class]]) {
+    if (![objectClass instancesRespondToSelector:@selector(initWithExternalRepresentation:)]) {
         @throw ([NSException exceptionWithName:@"NoMantleClassException"
                                         reason:@"This class is not a subclass of MTLModel"
                                       userInfo:nil]);
