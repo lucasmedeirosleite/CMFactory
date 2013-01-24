@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "CMFactory"
-  s.version      = "1.1.1"
+  s.version      = "1.1.2"
   s.summary      = "FactoryGirl and fixture loader for iOS."
   s.homepage     = "https://github.com/lucasmedeirosleite/CMFactory"
 
@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   
   s.author       = { "Lucas Medeiros" => "lucastoc@gmail.com" }
   
-  s.source       = { :git => "https://github.com/lucasmedeirosleite/CMFactory.git", :tag => "1.1.1" }
+  s.source       = { :git => "https://github.com/lucasmedeirosleite/CMFactory.git", :tag => "1.1.2" }
   
   s.requires_arc = true
 
