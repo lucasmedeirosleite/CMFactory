@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "CMFactory"
-  s.version      = "1.1.2"
+  s.version      = "1.2.0"
   s.summary      = "FactoryGirl and fixture loader for iOS."
   s.homepage     = "https://github.com/lucasmedeirosleite/CMFactory"
 
@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   
   s.author       = { "Lucas Medeiros" => "lucastoc@gmail.com" }
   
-  s.source       = { :git => "https://github.com/lucasmedeirosleite/CMFactory.git", :tag => "1.1.2" }
+  s.source       = { :git => "https://github.com/lucasmedeirosleite/CMFactory.git", :tag => "1.2.0" }
   
   s.requires_arc = true
 
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   
   s.xcconfig  = { 'FRAMEWORK_SEARCH_PATHS' => '"$(inherited)" "$(SDKROOT)/Developer/Library/Frameworks" "$(DEVELOPER_LIBRARY_DIR)/Frameworks"' }
 
-  s.dependency 'SBJson', '~> 3.1.1'
-  s.dependency 'Mantle', '~> 0.2.2'
+  s.dependency 'SBJson', '3.2'
+  s.dependency 'Mantle', '0.2.3'
   
 end
