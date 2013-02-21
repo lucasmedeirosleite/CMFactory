@@ -59,9 +59,9 @@ SPEC_BEGIN(YourSpec)
 	
 	//If you don't use github's Mantle library
 	beforeEach(^{
-	     NSDictionary *dictionary = [CMFactory buildUsingFixtureNamed:@"YourClass"];
+	     NSDictionary *dictionary = [CMFactory buildUsingFixture:@"YourClass"];
 		 //Or
-		 NSArray *aColletion = [CMFactory buildUsingFixtureNamed:@"People"];
+		 NSArray *aColletion = [CMFactory buildUsingFixture:@"People"];
 	});
 
 SPEC_END
