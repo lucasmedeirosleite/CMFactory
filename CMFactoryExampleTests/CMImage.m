@@ -10,11 +10,12 @@
 
 @implementation CMImage
 
-+ (NSDictionary *)externalRepresentationKeyPathsByPropertyKey
+
++ (NSDictionary *)JSONKeyPathsByPropertyKey
 {
     return @{
-        @"url" : @"url"
-    };
+             @"url" : @"url"
+           };
 }
 
 + (CMImage *)mockImage

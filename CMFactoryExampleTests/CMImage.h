@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MTLModel.h"
+#import "Mantle.h"
 
-@interface CMImage : MTLModel
+@interface CMImage : MTLModel <MTLJSONSerializing>
 
 @property (nonatomic, copy) NSString *url;
 

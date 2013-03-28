@@ -7,11 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MTLModel.h"
+#import "Mantle.h"
 
 @class CMImage;
 
-@interface CMMessage : MTLModel
+@interface CMMessage : MTLModel <MTLJSONSerializing>
 
 @property (nonatomic, copy) NSString *content;
 @property (nonatomic, copy) CMImage *image;

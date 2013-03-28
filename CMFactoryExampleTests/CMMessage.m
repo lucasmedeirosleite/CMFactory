@@ -12,7 +12,7 @@
 
 @implementation CMMessage
 
-+ (NSDictionary *)externalRepresentationKeyPathsByPropertyKey
++ (NSDictionary *)JSONKeyPathsByPropertyKey
 {
     return @{
         @"content" : @"message.content",
@@ -20,13 +20,8 @@
     };
 }
 
-+ (NSValueTransformer *)imageTransformer
-{
-    return [MTLValueTransformer reversibleTransformerWithForwardBlock:^(id image) {
-        return [[CMImage alloc] initWithExternalRepresentation:image];
-    } reverseBlock:^(CMImage *image) {
-        return [image externalRepresentation];
-    }];
++ (NSValueTransformer *)imageJSONTransformer {
+    return [NSValueTransformer mtl_JSONDictionaryTransformerWithModelClass:CMImage.class];
 }
 
 + (CMMessage *)mockMessage

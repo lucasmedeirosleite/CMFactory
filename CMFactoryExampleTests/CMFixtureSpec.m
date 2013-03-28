@@ -5,7 +5,7 @@
 
 SPEC_BEGIN(CMFixtureSpec)
 
-describe(@"CMFactory", ^{
+describe(@"CMFixture", ^{
    
     describe(@".buildUsingMantleClass:fromFactory:", ^{
     

@@ -1,6 +1,6 @@
 platform :ios, :deployment_target => "5.0"
 
-pod 'Mantle', '0.2.3'
+pod 'Mantle', '1.0'
 pod 'NSArray+Functional', '1.0.0'
 
 target :CMFactoryExampleTests, :exclusive => true do
