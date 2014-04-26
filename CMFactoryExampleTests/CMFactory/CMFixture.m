@@ -8,7 +8,6 @@
 
 #import "CMFixture.h"
 #import "Mantle.h"
-#import "SBJSON.h"
 
 @implementation CMFixture
 
@@ -82,8 +81,10 @@
 
 + (id)contentObjectFromJSONFileNamed:(NSString *)fileName
 {
-    id result = [self contentFromFixtureNamed:fileName ofType:@"json"];
-    return [result JSONValue];
+    NSData * data = [self dataFromFixtureNamed:fileName ofType:@"json"];
+    return [NSJSONSerialization JSONObjectWithData:data
+                                           options:0
+                                             error:nil];
 }
 
 + (id)contentObjectFromPlistFileNamed:(NSString *)fileName

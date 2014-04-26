@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		055C5D14F23E404B9A04853E /* libPods-CMFactoryExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 801D961A3DA9405684ACAD3E /* libPods-CMFactoryExampleTests.a */; };
-		C61D6D4816A8CF6E0048AB13 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C61D6D4716A8CF6E0048AB13 /* UIKit.framework */; };
-		C61D6D4A16A8CF6E0048AB13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C61D6D4916A8CF6E0048AB13 /* Foundation.framework */; };
-		C61D6D4C16A8CF6E0048AB13 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C61D6D4B16A8CF6E0048AB13 /* CoreGraphics.framework */; };
 		C61D6D5216A8CF6E0048AB13 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C61D6D5016A8CF6E0048AB13 /* InfoPlist.strings */; };
 		C61D6D5416A8CF6E0048AB13 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C61D6D5316A8CF6E0048AB13 /* main.m */; };
 		C61D6D5816A8CF6E0048AB13 /* CMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C61D6D5716A8CF6E0048AB13 /* CMAppDelegate.m */; };
@@ -19,9 +16,6 @@
 		C61D6D5E16A8CF6E0048AB13 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C61D6D5D16A8CF6E0048AB13 /* Default-568h@2x.png */; };
 		C61D6D6116A8CF6E0048AB13 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C61D6D5F16A8CF6E0048AB13 /* MainStoryboard.storyboard */; };
 		C61D6D6416A8CF6E0048AB13 /* CMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61D6D6316A8CF6E0048AB13 /* CMViewController.m */; };
-		C61D6D6C16A8CF6E0048AB13 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C61D6D6B16A8CF6E0048AB13 /* SenTestingKit.framework */; };
-		C61D6D6D16A8CF6E0048AB13 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C61D6D4716A8CF6E0048AB13 /* UIKit.framework */; };
-		C61D6D6E16A8CF6E0048AB13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C61D6D4916A8CF6E0048AB13 /* Foundation.framework */; };
 		C61D6D7616A8CF6E0048AB13 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C61D6D7416A8CF6E0048AB13 /* InfoPlist.strings */; };
 		C62A773216AADC7A005D8DD1 /* Messages.json in Resources */ = {isa = PBXBuildFile; fileRef = C62A773116AADC7A005D8DD1 /* Messages.json */; };
 		C62A773516AAE285005D8DD1 /* Images.plist in Resources */ = {isa = PBXBuildFile; fileRef = C62A773416AAE285005D8DD1 /* Images.plist */; };
@@ -52,9 +46,6 @@
 		801D961A3DA9405684ACAD3E /* libPods-CMFactoryExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CMFactoryExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0A187FD7AD9488C96EED44D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		C61D6D4316A8CF6E0048AB13 /* CMFactoryExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CMFactoryExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C61D6D4716A8CF6E0048AB13 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		C61D6D4916A8CF6E0048AB13 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		C61D6D4B16A8CF6E0048AB13 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		C61D6D4F16A8CF6E0048AB13 /* CMFactoryExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CMFactoryExample-Info.plist"; sourceTree = "<group>"; };
 		C61D6D5116A8CF6E0048AB13 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C61D6D5316A8CF6E0048AB13 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -67,8 +58,7 @@
 		C61D6D6016A8CF6E0048AB13 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		C61D6D6216A8CF6E0048AB13 /* CMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMViewController.h; sourceTree = "<group>"; };
 		C61D6D6316A8CF6E0048AB13 /* CMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMViewController.m; sourceTree = "<group>"; };
-		C61D6D6A16A8CF6E0048AB13 /* CMFactoryExampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CMFactoryExampleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C61D6D6B16A8CF6E0048AB13 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		C61D6D6A16A8CF6E0048AB13 /* CMFactoryExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CMFactoryExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C61D6D7316A8CF6E0048AB13 /* CMFactoryExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CMFactoryExampleTests-Info.plist"; sourceTree = "<group>"; };
 		C61D6D7516A8CF6E0048AB13 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C62A773116AADC7A005D8DD1 /* Messages.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Messages.json; path = Fixtures/Messages.json; sourceTree = "<group>"; };
@@ -92,9 +82,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C61D6D4816A8CF6E0048AB13 /* UIKit.framework in Frameworks */,
-				C61D6D4A16A8CF6E0048AB13 /* Foundation.framework in Frameworks */,
-				C61D6D4C16A8CF6E0048AB13 /* CoreGraphics.framework in Frameworks */,
 				EA553F0571E44643A3C8C23B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,9 +90,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C61D6D6C16A8CF6E0048AB13 /* SenTestingKit.framework in Frameworks */,
-				C61D6D6D16A8CF6E0048AB13 /* UIKit.framework in Frameworks */,
-				C61D6D6E16A8CF6E0048AB13 /* Foundation.framework in Frameworks */,
 				055C5D14F23E404B9A04853E /* libPods-CMFactoryExampleTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -129,7 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				C61D6D4316A8CF6E0048AB13 /* CMFactoryExample.app */,
-				C61D6D6A16A8CF6E0048AB13 /* CMFactoryExampleTests.octest */,
+				C61D6D6A16A8CF6E0048AB13 /* CMFactoryExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,10 +121,6 @@
 		C61D6D4616A8CF6E0048AB13 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C61D6D4716A8CF6E0048AB13 /* UIKit.framework */,
-				C61D6D4916A8CF6E0048AB13 /* Foundation.framework */,
-				C61D6D4B16A8CF6E0048AB13 /* CoreGraphics.framework */,
-				C61D6D6B16A8CF6E0048AB13 /* SenTestingKit.framework */,
 				801D961A3DA9405684ACAD3E /* libPods-CMFactoryExampleTests.a */,
 				1F32C23D666143F99E0584B1 /* libPods.a */,
 			);
@@ -259,8 +239,8 @@
 			);
 			name = CMFactoryExampleTests;
 			productName = CMFactoryExampleTests;
-			productReference = C61D6D6A16A8CF6E0048AB13 /* CMFactoryExampleTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = C61D6D6A16A8CF6E0048AB13 /* CMFactoryExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -269,6 +249,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = CM;
+				LastTestingUpgradeCheck = 0510;
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = Codeminer42;
 			};
@@ -477,6 +458,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B0A187FD7AD9488C96EED44D /* Pods.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CMFactoryExample/CMFactoryExample-Prefix.pch";
 				INFOPLIST_FILE = "CMFactoryExample/CMFactoryExample-Info.plist";
@@ -489,6 +471,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B0A187FD7AD9488C96EED44D /* Pods.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CMFactoryExample/CMFactoryExample-Prefix.pch";
 				INFOPLIST_FILE = "CMFactoryExample/CMFactoryExample-Info.plist";
@@ -506,13 +489,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CMFactoryExample/CMFactoryExample-Prefix.pch";
 				INFOPLIST_FILE = "CMFactoryExampleTests/CMFactoryExampleTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -525,13 +508,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CMFactoryExample/CMFactoryExample-Prefix.pch";
 				INFOPLIST_FILE = "CMFactoryExampleTests/CMFactoryExampleTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
