@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "CMFactory"
-  s.version      = "1.4.0"
+  s.version      = "1.4.1"
   s.summary      = "FactoryGirl and fixture loader for iOS."
   s.homepage     = "https://github.com/lucasmedeirosleite/CMFactory"
 
