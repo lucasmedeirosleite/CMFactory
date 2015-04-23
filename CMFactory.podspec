@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "CMFactory"
-  s.version      = "1.4.1"
+  s.version      = "1.4.2"
   s.summary      = "FactoryGirl and fixture loader for iOS."
   s.homepage     = "https://github.com/lucasmedeirosleite/CMFactory"
 
@@ -19,6 +19,6 @@ Pod::Spec.new do |s|
 
   s.xcconfig  = { 'FRAMEWORK_SEARCH_PATHS' => '"$(inherited)" "$(SDKROOT)/Developer/Library/Frameworks" "$(DEVELOPER_LIBRARY_DIR)/Frameworks"' }
 
-  s.dependency 'Mantle', '1.0'
+  s.dependency 'Mantle', '~> 1.5.4'
 
 end
