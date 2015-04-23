@@ -41,10 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0965986F67AE1A09717B6FC7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		1F32C23D666143F99E0584B1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		5BE50A8993B84E7199C3F81A /* Pods-CMFactoryExampleTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMFactoryExampleTests.xcconfig"; path = "Pods/Pods-CMFactoryExampleTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 		801D961A3DA9405684ACAD3E /* libPods-CMFactoryExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CMFactoryExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0A187FD7AD9488C96EED44D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		9661130903E184E402B72988 /* Pods-CMFactoryExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMFactoryExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CMFactoryExampleTests/Pods-CMFactoryExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		9F8B4ADBEF1D241BFCF74B01 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C61D6D4316A8CF6E0048AB13 /* CMFactoryExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CMFactoryExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C61D6D4F16A8CF6E0048AB13 /* CMFactoryExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CMFactoryExample-Info.plist"; sourceTree = "<group>"; };
 		C61D6D5116A8CF6E0048AB13 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -75,6 +76,7 @@
 		C6A8357D16A9F61B0085AAB0 /* CMMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMMessage.m; sourceTree = "<group>"; };
 		C6A8357F16A9F6700085AAB0 /* CMFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CMFixture.h; path = CMFactory/CMFixture.h; sourceTree = "<group>"; };
 		C6A8358216A9FBC20085AAB0 /* Message.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Message.json; path = Fixtures/Message.json; sourceTree = "<group>"; };
+		F3F6CE9EA4B4FDC57016BC19 /* Pods-CMFactoryExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMFactoryExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CMFactoryExampleTests/Pods-CMFactoryExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		80AD9E1B49C6E73335BBA369 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0965986F67AE1A09717B6FC7 /* Pods.debug.xcconfig */,
+				9F8B4ADBEF1D241BFCF74B01 /* Pods.release.xcconfig */,
+				F3F6CE9EA4B4FDC57016BC19 /* Pods-CMFactoryExampleTests.debug.xcconfig */,
+				9661130903E184E402B72988 /* Pods-CMFactoryExampleTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C61D6D3816A8CF6E0048AB13 = {
 			isa = PBXGroup;
 			children = (
@@ -104,8 +117,7 @@
 				C61D6D7116A8CF6E0048AB13 /* CMFactoryExampleTests */,
 				C61D6D4616A8CF6E0048AB13 /* Frameworks */,
 				C61D6D4416A8CF6E0048AB13 /* Products */,
-				5BE50A8993B84E7199C3F81A /* Pods-CMFactoryExampleTests.xcconfig */,
-				B0A187FD7AD9488C96EED44D /* Pods.xcconfig */,
+				80AD9E1B49C6E73335BBA369 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -311,7 +323,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-CMFactoryExampleTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CMFactoryExampleTests/Pods-CMFactoryExampleTests-resources.sh\"\n";
 		};
 		C61D6D6816A8CF6E0048AB13 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -338,7 +350,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -456,7 +468,7 @@
 		};
 		C61D6D7D16A8CF6E0048AB13 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B0A187FD7AD9488C96EED44D /* Pods.xcconfig */;
+			baseConfigurationReference = 0965986F67AE1A09717B6FC7 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -470,7 +482,7 @@
 		};
 		C61D6D7E16A8CF6E0048AB13 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B0A187FD7AD9488C96EED44D /* Pods.xcconfig */;
+			baseConfigurationReference = 9F8B4ADBEF1D241BFCF74B01 /* Pods.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -484,7 +496,7 @@
 		};
 		C61D6D8016A8CF6E0048AB13 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5BE50A8993B84E7199C3F81A /* Pods-CMFactoryExampleTests.xcconfig */;
+			baseConfigurationReference = F3F6CE9EA4B4FDC57016BC19 /* Pods-CMFactoryExampleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = "${inherited}";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CMFactoryExample.app/CMFactoryExample";
@@ -503,7 +515,7 @@
 		};
 		C61D6D8116A8CF6E0048AB13 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5BE50A8993B84E7199C3F81A /* Pods-CMFactoryExampleTests.xcconfig */;
+			baseConfigurationReference = 9661130903E184E402B72988 /* Pods-CMFactoryExampleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = "${inherited}";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CMFactoryExample.app/CMFactoryExample";

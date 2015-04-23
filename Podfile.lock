@@ -1,28 +1,18 @@
 PODS:
-  - Kiwi/ARC (2.2.2)
-  - Kiwi/NonARC (2.2.2)
-  - Kiwi/XCTest (2.2.2):
-    - Kiwi/ARC
-    - Kiwi/NonARC
-  - libextobjc/EXTKeyPathCoding (0.4):
-    - libextobjc/RuntimeExtensions
-  - libextobjc/EXTScope (0.4):
-    - libextobjc/RuntimeExtensions
-  - libextobjc/RuntimeExtensions (0.4)
-  - Mantle (1.0):
-    - libextobjc/EXTKeyPathCoding
-    - libextobjc/EXTScope
+  - Kiwi (2.3.1)
+  - Mantle (1.5.4):
+    - Mantle/extobjc (= 1.5.4)
+  - Mantle/extobjc (1.5.4)
   - NSArray+Functional (1.0.0)
 
 DEPENDENCIES:
-  - Kiwi/XCTest (= 2.2.2)
-  - Mantle (= 1.0)
+  - Kiwi (~> 2.3.1)
+  - Mantle (~> 1.5.4)
   - NSArray+Functional (= 1.0.0)
 
 SPEC CHECKSUMS:
-  Kiwi: 03539aeb004ccd42bdbc31253617b26364315df4
-  libextobjc: 2c9fc8226f0f38e562587f65172f93f0c9b4a47a
-  Mantle: aa9860e40cc365a094ef60fec46848fee7b03ca7
-  NSArray+Functional: 2fb24f1533c1380a595ed1da347bd4ec705f5495
+  Kiwi: f038a6c61f7a9e4d7766bff5717aa3b3fdb75f55
+  Mantle: 60acd0cd363e27d945bda0a6b8e90577112d28f3
+  NSArray+Functional: 70450a935ad6cf933f675251311c14385815506d
 
-COCOAPODS: 0.32.1
+COCOAPODS: 0.36.4
