@@ -10,7 +10,7 @@ Follow us on twitter: [@Codeminer42](https://twitter.com/Codeminer42)
 
 ## Development requirements
 
-* Cocoapods - https://github.com/CocoaPods/CocoaPods
+* CocoaPods - https://github.com/CocoaPods/CocoaPods
 
 ## Install cocoapods
 
@@ -23,7 +23,7 @@ More information about cocoapods:
 * https://github.com/CocoaPods/CocoaPods
 * http://nsscreencast.com/episodes/5-cocoapods
 
-## Cocoapods
+## CocoaPods
 
 Add the dependency to your `Podfile`:
 
