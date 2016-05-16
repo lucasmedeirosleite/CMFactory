@@ -1,5 +1,13 @@
 # CMFactory
 
+
+1. adapting project to use pods as frameworks:
+  - adding ‘use_frameworks!’ in pod files
+  - fixing #import statements across our source
+  - tree to work when dependencies are loaded as frameworks.
+  - fixing #import statements in a few pods so thatchy could be used as framework
+  - including source code of SCPStoreKitManager in our tree, since it
+  - 
 This project brings the idea of [FactoryGirl](https://github.com/thoughtbot/factory_girl) to iOS projects, and it loads fixtures and unmarshall them into a [Mantle](https://github.com/github/Mantle) class or NSDictionary class.
 
 ##Contact:
