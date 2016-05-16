@@ -19,6 +19,6 @@ Pod::Spec.new do |s|
 
   s.xcconfig  = { 'FRAMEWORK_SEARCH_PATHS' => '"$(inherited)" "$(SDKROOT)/Developer/Library/Frameworks" "$(DEVELOPER_LIBRARY_DIR)/Frameworks"' }
 
-  s.dependency 'Mantle'
+  s.dependency 'Mantle', '~> 1.5.4'
 
 end
