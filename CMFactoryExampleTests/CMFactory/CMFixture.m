@@ -11,6 +11,18 @@
 
 @implementation CMFixture
 
+static NSBundle *bundle_ = nil;
+
++ (void)setBundleForLoadingFixtures:(NSBundle *)bundle
+{
+  bundle_ = bundle;
+}
+
++ (NSBundle *)getBundleForLoadingFixtures
+{
+  return bundle_ ?: [NSBundle bundleForClass:[self class]];
+}
+
 + (id)buildUsingMantleClass:(Class)objectClass fromFixture:(NSString *)fileName
 {
     [self checkIfClassIsSubclassOfMTlModel:objectClass];
@@ -139,7 +151,7 @@
 
 + (NSString *)pathOfFileNamed:(NSString *)fileName withExtension:(NSString *)extension
 {
-    NSString *filePath = [[NSBundle bundleForClass:[self class]] pathForResource:fileName ofType:extension];
+    NSString *filePath = [[self getBundleForLoadingFixtures] pathForResource:fileName ofType:extension];
     return filePath;
 }
 
