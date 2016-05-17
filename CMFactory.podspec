@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'CMFactoryExampleTests/CMFactory'
 
-  s.xcconfig  = { 'FRAMEWORK_SEARCH_PATHS' => '"$(inherited)" "$(SDKROOT)/Developer/Library/Frameworks" "$(DEVELOPER_LIBRARY_DIR)/Frameworks"' }
+  s.xcconfig  = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "$(SDKROOT)/Developer/Library/Frameworks" "$(DEVELOPER_LIBRARY_DIR)/Frameworks"' }
 
   s.dependency 'Mantle', '~> 1.5.4'
 
