@@ -10,6 +10,7 @@
 
 @interface CMFixture : NSObject
 
++ (void)setBundleForLoadingFixtures:(NSBundle *)bundle;
 + (id) buildUsingMantleClass:(Class) objectClass fromFixture:(NSString *)fileName;
 + (id) buildUsingFixture:(NSString *)fileName;
 + (NSData *)dataFromFixtureNamed:(NSString *)fixtureName ofType:(NSString *)fixtureType;
